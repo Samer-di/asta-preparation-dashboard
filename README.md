@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Asta's Preparation Dashboard
 
-## Getting Started
+## Developer Information
 
-First, run the development server:
+**Full Name:** [Samer Madhat Daghestani]
+
+**Assignment:** Assignment 2 — Asta's Preparation Dashboard
+
+**Branch:** `assignment-2-asta-mvp`
+
+## Project Overview
+
+Asta's Preparation Dashboard is a responsive web application inspired by the Black Clover anime.
+
+The application helps Asta organize his training tasks, mark completed activities, and track his preparation progress before facing Lucifero.
+
+This project was developed as an educational assignment using a PRD-driven development workflow, Google Stitch for UI design, a Proof of Concept (POC), and an MVP.
+
+## Technologies Used
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+- React
+
+## Core Features
+
+1. View three predefined training tasks.
+2. Mark tasks as completed or undo completion.
+3. Track preparation progress through an automatically calculated percentage.
+
+The dashboard also includes a brief Lucifero threat description and a responsive layout for desktop and mobile devices.
+
+## Installation and Setup
+
+**1. Clone the repository:**
+
+```bash
+git clone https://github.com/Samer-di/asta-preparation-dashboard.git
+```
+
+**2. Navigate to the project:**
+
+```bash
+cd asta-preparation-dashboard
+```
+
+**3. Install dependencies:**
+
+```bash
+npm install
+```
+
+**4. Start the development server:**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**5. Open the application:**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Testing
 
-## Learn More
+Run ESLint:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run lint
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Create a production build:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+```
 
-## Deploy on Vercel
+Both commands were successfully executed during development.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Manual testing included task completion, undo functionality, percentage calculations, responsive layout, and keyboard accessibility.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Design
+
+The user interface was designed using Google Stitch.
+
+**Selected Color Palette:** Arctic Blue & Navy.
+
+The design prioritizes readability, responsiveness, accessibility, and a clean dashboard experience.
+
+Design screenshots are available in `docs/evidence/`.
+
+## MCP Integration
+
+Google Stitch MCP was configured using Visual Studio Code and GitHub Copilot.
+
+The server started and discovered 16 tools, but successful design retrieval was not verified due to an authentication issue.
+
+The project therefore used the assignment's accepted manual fallback: Stitch design screenshots supplied to the coding agent.
+
+Details are documented in `docs/MCP.md`.
+
+## Project Documentation
+
+| Document                    | Description                                  |
+| --------------------------- | -------------------------------------------- |
+| [PRD.md](docs/PRD.md)       | Product requirements and acceptance criteria |
+| [DESIGN.md](docs/DESIGN.md) | Design decisions and refinements             |
+| [MCP.md](docs/MCP.md)       | MCP configuration and documented fallback    |
+| [POC.md](docs/POC.md)       | Proof of Concept and test results            |
+| [REVIEW.md](docs/REVIEW.md) | Verification, user feedback, and reflection  |
+| [Evidence](docs/evidence/)  | Supporting screenshots                       |
+
+## Limitations
+
+- Training tasks are predefined.
+- Users cannot add, edit, or delete tasks.
+- Completion state resets after refreshing the page.
+- No database or authentication system is included.
+- No additional application routes are required.
+
+## Project Status
+
+The MVP implementation is complete.
+
+The project passed the reported lint, build, functionality, responsive design, and keyboard accessibility checks.
+
+A small user pilot was conducted and received positive feedback.
+
+This project is an educational demonstration and does not claim real-world product validation.
+
+## Credits
+
+Inspired by Black Clover, created by Yuki Tabata.
+
+Character names and related intellectual property belong to their respective rights holders.
+
+This application was created for educational purposes.
